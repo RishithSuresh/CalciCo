@@ -18,7 +18,6 @@ A modern, responsive calculator web app built with HTML, CSS, and JavaScript. Fe
 - Basic arithmetic operations (+, -, ×, ÷)
 - Percentage and negate functions
 - Calculation history (last 10 results)
-- Theme toggler for light/dark mode
 - Keyboard shortcuts (numbers, operators, Enter, Backspace, %, C)
 
 ## Getting Started
@@ -32,7 +31,6 @@ A modern, responsive calculator web app built with HTML, CSS, and JavaScript. Fe
 
 ## Usage
 - Click buttons or use your keyboard to enter calculations.
-- Toggle theme using the dot in the top right.
 - View your last 10 calculations in the history panel.
 
 ## Customization
