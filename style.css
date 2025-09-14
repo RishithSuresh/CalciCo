@@ -101,38 +101,6 @@ button#equal{
     height: 130px;
 }
 
-/*light theme*/
-
-.Calculator{
-    background-color: #fff;
-}
-
-.Calculator #display{
-    color: #0a1e23;
-}
-
-.Calculator button#clear{
-    background-color: #ffd5d8;
-    color: #a6252e;
-}
-
-.Calculator button.btn-number{
-    background-color: #c3eaff;
-    color: #000;
-}
-
-.Calculator button.btn-operator{
-    background-color: #ffd0fd;
-    color: #9c1998;
-}
-
-.Calculator button.btn-equals{
-    background-color: #adf7bc;
-    color: #47952d;
-}
-
-/*Dark theme*/
-
 .Calculator.Dark{
     background-color: #071115;
 }
@@ -152,7 +120,7 @@ button#equal{
 }
 
 .Calculator.Dark button.btn-operator{
-    background-color: #1b2f38;
+    background-color: #301843;
     color: #aa00a4;
 }
 
