@@ -95,7 +95,6 @@ button{
 
 button:hover{
     transform: scale(1.1);
-    background-color: #ff0582;
 }
 
 button#equal{
@@ -134,30 +133,30 @@ button#equal{
 
 /*Dark theme*/
 
-.Calculator.dark{
+.Calculator.Dark{
     background-color: #071115;
 }
 
-.Calculator.dark #display{
+.Calculator.Dark #display{
     color: #f8fafd;
 }
 
-.Calculator button#clear{
+.Calculator.Dark button#clear{
     background-color: #2d191e;
     color: #fb0011;
 }
 
-.Calculator button.btn-number{
+.Calculator.Dark button.btn-number{
     background-color: #1b2f38;
     color: #afe4ff;
 }
 
-.Calculator button.btn-operator{
-    background-color: #ffd0fd;
-    color: #9c1998;
+.Calculator.Dark button.btn-operator{
+    background-color: #1b2f38;
+    color: #aa00a4;
 }
 
-.Calculator button.btn-equals{
-    background-color: #adf7bc;
-    color: #47952d;
+.Calculator.Dark button.btn-equals{
+    background-color: #223323;
+    color: #ffffff;
 }
