@@ -50,3 +50,37 @@ buttons.forEach((item) => {
         }
     };
 });
+
+// Keyboard support for calculator
+window.addEventListener("keydown", function(e) {
+    const key = e.key;
+    if (!calculator) return;
+    if (key >= "0" && key <= "9") {
+        display.textContent += key;
+    } else if (["+", "-", "*", "/", "."].includes(key)) {
+        display.textContent += key;
+    } else if (key === "Enter" || key === "=") {
+        if(display.textContent !== "") {
+            try {
+                display.textContent = Function('"use strict";return (' + display.textContent + ')')();
+            } catch {
+                display.textContent = "Error";
+                setTimeout(() => (display.textContent = ""), 2000);
+            }
+        }
+    } else if (key === "Backspace") {
+        let string = display.textContent.toString();
+        display.textContent = string.substr(0, string.length - 1);
+    } else if (key === "%") {
+        if(display.textContent !== "") {
+            try {
+                display.textContent = (parseFloat(display.textContent) / 100).toString();
+            } catch {
+                display.textContent = "Error";
+                setTimeout(() => (display.textContent = ""), 2000);
+            }
+        }
+    } else if (key === "c" || key === "C") {
+        display.textContent = "";
+    }
+});
